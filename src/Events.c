@@ -139,7 +139,6 @@ void process(GameState *game)
 
   //Changes Status state to Game mode after 250 frames
   if(game->time > 300 && game->statusState != STATUS_STATE_GAMEOVER && game->statusState != STATUS_STATE_MENU){
-    printf("happened");
     shutdown_status_lives(game);
     game->statusState = STATUS_STATE_GAME;
   }
